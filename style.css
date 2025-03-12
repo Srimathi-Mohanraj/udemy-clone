@@ -15,7 +15,10 @@ body{
     align-items: center;
     padding-bottom:10px ;
     border-bottom: solid black 1px;
-    
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
    
 }
 .navbar__s1__title{
@@ -34,6 +37,7 @@ body{
 .navbar__s2 input{
 border: none;
 width: 100%;
+color: transparent;
 }
 .navbar__s2 input:focus{
     outline: none;
@@ -44,6 +48,25 @@ display: flex;
 gap: 10px;
 margin: 10px;
 }
+/* mylearning */
+.mylearning{
+position: relative;
+cursor: pointer;
+}
+.mylearning__popup{
+position: absolute;
+background-color: white;
+border: 1px solid black;
+top: 150%;
+padding: 20px;
+right: 0;
+display: none;
+width: 100px;
+}
+.mylearning:hover .mylearning__popup{
+display: block;
+}
+
 /* categories */
 .categories{
     
@@ -60,9 +83,27 @@ margin: 10px;
         border-radius: 20px;
  
     }
+    /* sale image */
+    .saleimage{
+        position: relative;
+    }
     .saleimage img{
         width: 100%;
     }
+    .saleimage__box{
+        
+        background-color: white;
+        border: black solid 2px;
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        padding: 3%;
+        border-radius: 10px;
+        width: 28%;
+
+    }
+    
+    
     /* course card  */
     
     .course__card img{
@@ -73,6 +114,7 @@ margin: 10px;
     .course__card{
         width: 400px;
     }
+    /* recommended */
     .recommended{
         padding: 10px;
       
@@ -119,6 +161,7 @@ flex-grow: 1;
     width: 100%;
     height: 60%;
 }
+/* footer */
 .footer{
     background-color: black;
     color: white;
